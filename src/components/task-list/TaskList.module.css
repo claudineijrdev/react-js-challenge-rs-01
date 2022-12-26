@@ -1,0 +1,120 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+
+  position: absolute;
+  width: 736px;
+  height: 287px;
+  top: 291px;
+}
+
+.summary {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 19px;
+  width: 100%;
+
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+}
+
+.created_tasks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--blue);
+  gap: 8px;
+}
+.finished_tasks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--purple);
+  gap: 8px;
+}
+
+.task_counter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 8px;
+  gap: 10px;
+
+  width: 25px;
+  height: 19px;
+  border-radius: 999px;
+
+  background: var(--gray-400);
+  color: var(--gray-200);
+
+  font-style: normal;
+}
+
+.empty_list {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  padding: 64px 24px;
+  gap: 16px;
+  width: 100%;
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+
+}
+
+.empty_list > span {
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--gray-200);
+  text-align: center;
+  line-height: 140%;
+}
+.empty_list > span ~ span{
+  font-weight: 400;
+}
+.task_list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+}
+
+.task {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 16px;
+
+  width: 100%;
+  height: 72px;
+
+  background: var(--gray-500);
+
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.task > span {
+  font-size: 14px;
+  color: var(--gray-100);
+  margin: 0px 8px;
+
+}
+
+.task_completed {
+  color: var(--gray-300) !important;
+  text-decoration: line-through;
+}

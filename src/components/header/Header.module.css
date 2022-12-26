@@ -1,0 +1,28 @@
+.header {
+  background: var(--gray-700);
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.todo {
+  margin-left: 12px;
+  display: flex;
+  flex-direction: row;
+  height: 48px;
+  font-weight: 900;
+  font-size: 40px;
+  font-family: 'Inter', sans-serif;
+}
+
+.title_to {
+  color: var(--blue);
+}
+
+.title_do {
+  color: var(--purple-dark);
+}
